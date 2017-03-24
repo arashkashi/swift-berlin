@@ -14,6 +14,12 @@
 		D9C75C3C1E85664800BE287F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C75C3A1E85664800BE287F /* LaunchScreen.storyboard */; };
 		D9C75C471E85664800BE287F /* SwiftBerlinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C75C461E85664800BE287F /* SwiftBerlinTests.swift */; };
 		D9C75C521E85664800BE287F /* SwiftBerlinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C75C511E85664800BE287F /* SwiftBerlinUITests.swift */; };
+		D9C75C661E85671E00BE287F /* CoreStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C75C601E85671E00BE287F /* CoreStorable.swift */; };
+		D9C75C671E85671E00BE287F /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C75C611E85671E00BE287F /* DataProvider.swift */; };
+		D9C75C681E85671E00BE287F /* FetchResultsControllerWithTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C75C621E85671E00BE287F /* FetchResultsControllerWithTableView.swift */; };
+		D9C75C691E85671E00BE287F /* PersisteneStoreInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C75C631E85671E00BE287F /* PersisteneStoreInitializer.swift */; };
+		D9C75C6A1E85671E00BE287F /* PersistentStoreCoordinatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C75C641E85671E00BE287F /* PersistentStoreCoordinatorManager.swift */; };
+		D9C75C6B1E85671E00BE287F /* ResourceMetaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C75C651E85671E00BE287F /* ResourceMetaInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		D9C75C4D1E85664800BE287F /* SwiftBerlinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftBerlinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C75C511E85664800BE287F /* SwiftBerlinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBerlinUITests.swift; sourceTree = "<group>"; };
 		D9C75C531E85664800BE287F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9C75C601E85671E00BE287F /* CoreStorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreStorable.swift; sourceTree = "<group>"; };
+		D9C75C611E85671E00BE287F /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		D9C75C621E85671E00BE287F /* FetchResultsControllerWithTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchResultsControllerWithTableView.swift; sourceTree = "<group>"; };
+		D9C75C631E85671E00BE287F /* PersisteneStoreInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersisteneStoreInitializer.swift; sourceTree = "<group>"; };
+		D9C75C641E85671E00BE287F /* PersistentStoreCoordinatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentStoreCoordinatorManager.swift; sourceTree = "<group>"; };
+		D9C75C651E85671E00BE287F /* ResourceMetaInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceMetaInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,7 @@
 		D9C75C301E85664800BE287F /* SwiftBerlin */ = {
 			isa = PBXGroup;
 			children = (
+				D9C75C5F1E85670600BE287F /* DataProvider */,
 				D9C75C311E85664800BE287F /* AppDelegate.swift */,
 				D9C75C331E85664800BE287F /* ViewController.swift */,
 				D9C75C351E85664800BE287F /* Main.storyboard */,
@@ -123,6 +136,19 @@
 				D9C75C531E85664800BE287F /* Info.plist */,
 			);
 			path = SwiftBerlinUITests;
+			sourceTree = "<group>";
+		};
+		D9C75C5F1E85670600BE287F /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				D9C75C601E85671E00BE287F /* CoreStorable.swift */,
+				D9C75C611E85671E00BE287F /* DataProvider.swift */,
+				D9C75C621E85671E00BE287F /* FetchResultsControllerWithTableView.swift */,
+				D9C75C631E85671E00BE287F /* PersisteneStoreInitializer.swift */,
+				D9C75C641E85671E00BE287F /* PersistentStoreCoordinatorManager.swift */,
+				D9C75C651E85671E00BE287F /* ResourceMetaInfo.swift */,
+			);
+			path = DataProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9C75C691E85671E00BE287F /* PersisteneStoreInitializer.swift in Sources */,
 				D9C75C341E85664800BE287F /* ViewController.swift in Sources */,
+				D9C75C6A1E85671E00BE287F /* PersistentStoreCoordinatorManager.swift in Sources */,
+				D9C75C661E85671E00BE287F /* CoreStorable.swift in Sources */,
+				D9C75C6B1E85671E00BE287F /* ResourceMetaInfo.swift in Sources */,
+				D9C75C681E85671E00BE287F /* FetchResultsControllerWithTableView.swift in Sources */,
+				D9C75C671E85671E00BE287F /* DataProvider.swift in Sources */,
 				D9C75C321E85664800BE287F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
