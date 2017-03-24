@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         self.tableView.dataSource = self
+        self.tableView.delegate = self
     }
     
     @IBAction func onCreateTapped() {
@@ -58,6 +59,26 @@ extension ViewController: UITableViewDataSource {
         cell.detailTextLabel?.text = contact.number
         
         return cell
+    }
+}
+
+
+extension ViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete {
+            
+            let contact = dataProvider.fetchResultController.object(at: indexPath)
+            dataProvider.delete(item: contact, completion: { (success) in
+                
+                if success {
+                    
+                    try? self.dataProvider.fetchResultController.performFetch()
+                    tableView.reloadData()
+                }
+            })
+        }
     }
 }
 
