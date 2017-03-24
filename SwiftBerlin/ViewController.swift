@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     let dataProvider = DataProvider<Contact>(operationMode: .UI)
     
     let secondDataProvider = DataProvider<Contact>(operationMode: .UI)
+    
+    private var firstTableSyncer: FetchResultsControllerWithTableView<Contact>!
+    private var secondTableSyncer: FetchResultsControllerWithTableView<Contact>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +30,12 @@ class ViewController: UIViewController {
         self.tableView.delegate = self
         
         self.secondTableView.dataSource = self
+        
+        self.firstTableSyncer = FetchResultsControllerWithTableView(tableView: tableView
+            , fetchController: dataProvider.fetchResultController)
+        
+        self.secondTableSyncer = FetchResultsControllerWithTableView(tableView: secondTableView
+            , fetchController: secondDataProvider.fetchResultController)
     }
     
     @IBAction func onCreateTapped() {
