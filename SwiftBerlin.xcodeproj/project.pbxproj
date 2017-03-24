@@ -21,6 +21,7 @@
 		D9C75C6A1E85671E00BE287F /* PersistentStoreCoordinatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C75C641E85671E00BE287F /* PersistentStoreCoordinatorManager.swift */; };
 		D9C75C6B1E85671E00BE287F /* ResourceMetaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C75C651E85671E00BE287F /* ResourceMetaInfo.swift */; };
 		D9C75C6E1E8567BE00BE287F /* NSLock+Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C75C6D1E8567BE00BE287F /* NSLock+Block.swift */; };
+		D9C75C781E856F0F00BE287F /* CreatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C75C771E856F0F00BE287F /* CreatePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		D9C75C641E85671E00BE287F /* PersistentStoreCoordinatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentStoreCoordinatorManager.swift; sourceTree = "<group>"; };
 		D9C75C651E85671E00BE287F /* ResourceMetaInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceMetaInfo.swift; sourceTree = "<group>"; };
 		D9C75C6D1E8567BE00BE287F /* NSLock+Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLock+Block.swift"; sourceTree = "<group>"; };
+		D9C75C771E856F0F00BE287F /* CreatePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				D9C75C6D1E8567BE00BE287F /* NSLock+Block.swift */,
+				D9C75C771E856F0F00BE287F /* CreatePresenter.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			files = (
 				D9C75C691E85671E00BE287F /* PersisteneStoreInitializer.swift in Sources */,
 				D9C75C341E85664800BE287F /* ViewController.swift in Sources */,
+				D9C75C781E856F0F00BE287F /* CreatePresenter.swift in Sources */,
 				D9C75C6A1E85671E00BE287F /* PersistentStoreCoordinatorManager.swift in Sources */,
 				D9C75C661E85671E00BE287F /* CoreStorable.swift in Sources */,
 				D9C75C6B1E85671E00BE287F /* ResourceMetaInfo.swift in Sources */,
@@ -558,6 +562,7 @@
 				D9C75C581E85664800BE287F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9C75C591E85664800BE287F /* Build configuration list for PBXNativeTarget "SwiftBerlinTests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +571,7 @@
 				D9C75C5B1E85664800BE287F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9C75C5C1E85664800BE287F /* Build configuration list for PBXNativeTarget "SwiftBerlinUITests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +580,7 @@
 				D9C75C5E1E85664800BE287F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
