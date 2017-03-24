@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D9C75C2D1E85664800BE287F"
+               BuildableName = "SwiftBerlin.app"
+               BlueprintName = "SwiftBerlin"
+               ReferencedContainer = "container:SwiftBerlin.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D9C75C411E85664800BE287F"
+               BuildableName = "SwiftBerlinTests.xctest"
+               BlueprintName = "SwiftBerlinTests"
+               ReferencedContainer = "container:SwiftBerlin.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D9C75C4C1E85664800BE287F"
+               BuildableName = "SwiftBerlinUITests.xctest"
+               BlueprintName = "SwiftBerlinUITests"
+               ReferencedContainer = "container:SwiftBerlin.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D9C75C2D1E85664800BE287F"
+            BuildableName = "SwiftBerlin.app"
+            BlueprintName = "SwiftBerlin"
+            ReferencedContainer = "container:SwiftBerlin.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D9C75C2D1E85664800BE287F"
+            BuildableName = "SwiftBerlin.app"
+            BlueprintName = "SwiftBerlin"
+            ReferencedContainer = "container:SwiftBerlin.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D9C75C2D1E85664800BE287F"
+            BuildableName = "SwiftBerlin.app"
+            BlueprintName = "SwiftBerlin"
+            ReferencedContainer = "container:SwiftBerlin.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
