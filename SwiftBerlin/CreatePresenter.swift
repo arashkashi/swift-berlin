@@ -45,6 +45,6 @@ class CreatePresenter {
         alertController.addAction(enterAction)
         alertController.addAction(cancelAction)
         
-        sourceViewController.present(alertController, animated: true, completion: nil)
+        viewController.present(alertController, animated: true, completion: nil)
     }
 }
