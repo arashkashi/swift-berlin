@@ -45,7 +45,7 @@ extension Contact: CoreStorable {
     static var fetchRequestWithDescriptor: NSFetchRequest<Contact> {
         
         let request =  Contact.fetchAllRequest
-        request.sortDescriptors = [NSSortDescriptor(key: "firstName", ascending: true)]
+        request.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
 
         return request
     }
