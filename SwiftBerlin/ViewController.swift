@@ -13,7 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var createButton: UIButton!
     
+    @IBOutlet weak var secondTableView: UITableView!
+    
     let dataProvider = DataProvider<Contact>(operationMode: .UI)
+    
+    let secondDataProvider = DataProvider<Contact>(operationMode: .UI)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +25,8 @@ class ViewController: UIViewController {
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        
+        self.secondTableView.dataSource = self
     }
     
     @IBAction func onCreateTapped() {
@@ -46,10 +52,27 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
+        if tableView == self.secondTableView {
+            
+            return secondDataProvider.fetchResultController.sections?[section].objects?.count ?? 0
+        }
+        
         return dataProvider.fetchResultController.sections?[section].objects?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if tableView == self.secondTableView {
+            
+            let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "contactCell")
+            
+            let contact = self.secondDataProvider.fetchResultController.object(at: indexPath)
+            
+            cell.textLabel?.text = contact.name
+            cell.detailTextLabel?.text = contact.number
+            
+            return cell
+        }
         
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "contactCell")
         

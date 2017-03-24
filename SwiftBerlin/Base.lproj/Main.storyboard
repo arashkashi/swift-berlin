@@ -23,29 +23,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ICI-S6-mZO">
-                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <rect key="frame" x="16" y="20" width="343" height="297"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZ1-dG-mgR">
-                                <rect key="frame" x="164.5" y="637" width="46" height="30"/>
+                                <rect key="frame" x="164.5" y="287" width="46" height="30"/>
                                 <state key="normal" title="Create"/>
                                 <connections>
                                     <action selector="onCreateTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="DUa-fG-rhN"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8B8-gH-Gdz">
+                                <rect key="frame" x="16" y="398" width="343" height="269"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YZ1-dG-mgR" firstAttribute="bottom" secondItem="ICI-S6-mZO" secondAttribute="bottom" id="6rU-ef-xih"/>
                             <constraint firstItem="ICI-S6-mZO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7NG-In-8Hs"/>
                             <constraint firstItem="YZ1-dG-mgR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KwG-lq-IcO"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ICI-S6-mZO" secondAttribute="bottom" id="hW9-nJ-cem"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8B8-gH-Gdz" secondAttribute="trailing" id="Pem-rX-jvn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ICI-S6-mZO" secondAttribute="bottom" constant="350" id="hW9-nJ-cem"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8B8-gH-Gdz" secondAttribute="bottom" id="hbH-21-2SK"/>
+                            <constraint firstItem="8B8-gH-Gdz" firstAttribute="top" secondItem="ICI-S6-mZO" secondAttribute="bottom" constant="81" id="jeg-6g-x1v"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ICI-S6-mZO" secondAttribute="trailing" id="ohb-CN-HdQ"/>
                             <constraint firstItem="ICI-S6-mZO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="s91-ey-ZPu"/>
+                            <constraint firstItem="8B8-gH-Gdz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yKl-k4-fJ1"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="createButton" destination="YZ1-dG-mgR" id="06y-G8-fNx"/>
+                        <outlet property="secondTableView" destination="8B8-gH-Gdz" id="6Oc-8s-ztF"/>
                         <outlet property="tableView" destination="ICI-S6-mZO" id="hZU-bv-s1d"/>
                     </connections>
                 </viewController>
