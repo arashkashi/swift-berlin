@@ -35,11 +35,11 @@ class CreatePresenter {
         
         alertController.addTextField { textField in
             
-            textField.placeholder = "Enter First Name"
+            textField.placeholder = "Enter Name"
         }
         alertController.addTextField { textField in
             
-            textField.placeholder = "Enter Second Name"
+            textField.placeholder = "Enter Number"
         }
         
         alertController.addAction(enterAction)
