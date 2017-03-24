@@ -20,6 +20,7 @@
 		D9C75C691E85671E00BE287F /* PersisteneStoreInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C75C631E85671E00BE287F /* PersisteneStoreInitializer.swift */; };
 		D9C75C6A1E85671E00BE287F /* PersistentStoreCoordinatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C75C641E85671E00BE287F /* PersistentStoreCoordinatorManager.swift */; };
 		D9C75C6B1E85671E00BE287F /* ResourceMetaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C75C651E85671E00BE287F /* ResourceMetaInfo.swift */; };
+		D9C75C6E1E8567BE00BE287F /* NSLock+Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C75C6D1E8567BE00BE287F /* NSLock+Block.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		D9C75C631E85671E00BE287F /* PersisteneStoreInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersisteneStoreInitializer.swift; sourceTree = "<group>"; };
 		D9C75C641E85671E00BE287F /* PersistentStoreCoordinatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentStoreCoordinatorManager.swift; sourceTree = "<group>"; };
 		D9C75C651E85671E00BE287F /* ResourceMetaInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceMetaInfo.swift; sourceTree = "<group>"; };
+		D9C75C6D1E8567BE00BE287F /* NSLock+Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLock+Block.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		D9C75C301E85664800BE287F /* SwiftBerlin */ = {
 			isa = PBXGroup;
 			children = (
+				D9C75C6C1E8567A600BE287F /* Utils */,
 				D9C75C5F1E85670600BE287F /* DataProvider */,
 				D9C75C311E85664800BE287F /* AppDelegate.swift */,
 				D9C75C331E85664800BE287F /* ViewController.swift */,
@@ -149,6 +152,14 @@
 				D9C75C651E85671E00BE287F /* ResourceMetaInfo.swift */,
 			);
 			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		D9C75C6C1E8567A600BE287F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D9C75C6D1E8567BE00BE287F /* NSLock+Block.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +305,7 @@
 				D9C75C661E85671E00BE287F /* CoreStorable.swift in Sources */,
 				D9C75C6B1E85671E00BE287F /* ResourceMetaInfo.swift in Sources */,
 				D9C75C681E85671E00BE287F /* FetchResultsControllerWithTableView.swift in Sources */,
+				D9C75C6E1E8567BE00BE287F /* NSLock+Block.swift in Sources */,
 				D9C75C671E85671E00BE287F /* DataProvider.swift in Sources */,
 				D9C75C321E85664800BE287F /* AppDelegate.swift in Sources */,
 			);
