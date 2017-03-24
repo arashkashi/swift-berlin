@@ -80,5 +80,19 @@ extension ViewController: UITableViewDelegate {
             })
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        CreatePresenter.present(viewController: self) { (name, number) in
+            
+            let contact = self.dataProvider.fetchResultController.object(at: indexPath)
+            contact.name = name
+            contact.number = number
+            
+            try? contact.managedObjectContext!.save()
+            try? self.dataProvider.fetchResultController.performFetch()
+            tableView.reloadData()
+        }
+    }
 }
 
