@@ -22,6 +22,7 @@
 		D9C75C6B1E85671E00BE287F /* ResourceMetaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C75C651E85671E00BE287F /* ResourceMetaInfo.swift */; };
 		D9C75C6E1E8567BE00BE287F /* NSLock+Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C75C6D1E8567BE00BE287F /* NSLock+Block.swift */; };
 		D9C75C781E856F0F00BE287F /* CreatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C75C771E856F0F00BE287F /* CreatePresenter.swift */; };
+		D9F5D9B31E87C25400CC2397 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F5D9B21E87C25400CC2397 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		D9C75C651E85671E00BE287F /* ResourceMetaInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceMetaInfo.swift; sourceTree = "<group>"; };
 		D9C75C6D1E8567BE00BE287F /* NSLock+Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLock+Block.swift"; sourceTree = "<group>"; };
 		D9C75C771E856F0F00BE287F /* CreatePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePresenter.swift; sourceTree = "<group>"; };
+		D9F5D9B21E87C25400CC2397 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9F5D9B31E87C25400CC2397 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +100,7 @@
 				D9C75C451E85664800BE287F /* SwiftBerlinTests */,
 				D9C75C501E85664800BE287F /* SwiftBerlinUITests */,
 				D9C75C2F1E85664800BE287F /* Products */,
+				D9F5D9B11E87C25400CC2397 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +167,14 @@
 				D9C75C771E856F0F00BE287F /* CreatePresenter.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		D9F5D9B11E87C25400CC2397 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9F5D9B21E87C25400CC2397 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
