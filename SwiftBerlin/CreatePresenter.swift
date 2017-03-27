@@ -48,3 +48,32 @@ class CreatePresenter {
         viewController.present(alertController, animated: true, completion: nil)
     }
 }
+
+
+class SearchDelegate: NSObject, UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        onChangeBlock?(searchText)
+    }
+    
+    var onChangeBlock: ((String) -> Void)?
+}
+
+
+extension UISearchBar {
+    
+    static func addToHeaderOf(tableview: UITableView
+        , searchDelegate: SearchDelegate
+        , onSearchChange: @escaping (String) -> Void) {
+        
+        let bar = UISearchBar(frame: CGRect(x: 0, y: 0, width: 105, height: 45))
+
+        searchDelegate.onChangeBlock = onSearchChange
+    
+        bar.delegate = searchDelegate
+        
+        tableview.tableHeaderView = bar
+    }
+}
+

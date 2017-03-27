@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftBerlin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,8 +21,53 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ey5-Y3-OxO">
+                                <rect key="frame" x="16" y="20" width="343" height="397"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="rEu-VN-Vcb">
+                                <rect key="frame" x="129.5" y="387" width="116" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTG-iH-EUS">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Create"/>
+                                        <connections>
+                                            <action selector="onCreateTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="HNg-oU-lZ3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BK-1l-Vye">
+                                        <rect key="frame" x="81" y="0.0" width="35" height="30"/>
+                                        <state key="normal" title="Read"/>
+                                        <connections>
+                                            <action selector="onReadTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="hpZ-fH-kmm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3CG-K9-T57">
+                                <rect key="frame" x="16" y="422" width="343" height="245"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ey5-Y3-OxO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7oG-Dq-50B"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ey5-Y3-OxO" secondAttribute="bottom" constant="250" id="92W-Zu-uRO"/>
+                            <constraint firstItem="rEu-VN-Vcb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HHl-U4-W2M"/>
+                            <constraint firstItem="3CG-K9-T57" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PWs-yY-LKj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3CG-K9-T57" secondAttribute="trailing" id="Wha-ts-8Uk"/>
+                            <constraint firstItem="rEu-VN-Vcb" firstAttribute="bottom" secondItem="ey5-Y3-OxO" secondAttribute="bottom" id="axs-TQ-Nvm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ey5-Y3-OxO" secondAttribute="trailing" id="eXY-LG-KDX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3CG-K9-T57" secondAttribute="bottom" id="kIT-HX-BkR"/>
+                            <constraint firstItem="3CG-K9-T57" firstAttribute="top" secondItem="ey5-Y3-OxO" secondAttribute="bottom" constant="5" id="mjp-Nd-Jwg"/>
+                            <constraint firstItem="ey5-Y3-OxO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uVD-D5-pt1"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomTableView" destination="3CG-K9-T57" id="jiH-p5-uxq"/>
+                        <outlet property="topTableView" destination="ey5-Y3-OxO" id="j8z-pg-uTG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
