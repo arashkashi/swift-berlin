@@ -26,11 +26,12 @@ class ViewController: UIViewController {
         UISearchBar.addToHeaderOf(tableview: topTableView
         , searchDelegate: searchDelegate) { (searchString) in
             
-            // TODO: What happens when the user types something in the search box?
-            //          1. make a predicate with the text
-            //          2. feed the text to the NSFetchResultsController
-            //          3. perform the fetch
-            //          4. re-load the table
+            // TODO_2: What happens when the user types something in the search box?
+            //          1. Make a predicate with the text
+            //          2. Feed the predicate to the NSFetchResultsController
+            //          3. Perform the fetch
+            //          4. Re-load the table
+            
             print(searchString)
         }
     }
@@ -86,10 +87,25 @@ extension ViewController: UITableViewDelegate {
         
         if tableView == topTableView && editingStyle == .delete {
             
-            // TODO: Implement how happens when a deleting an item from Local Database
+            // TODO_4: Implement how happens when a deleting an item from Local Database
             //          1. Fetch the object, using NSFetchResultsController from DataProvider
             //          2. Delete the object using the attached managed object context.
             //          3. Perform the save
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if tableView == topTableView {
+            
+            // TODO_3: Update the item
+            //          1. show the create presenter
+            //          2. Update the contact
+            //          3. Save to data base using the attached managed object context
+            //          4. perform the fetch on fetch results controller
+            //          5. reload the table
+            //          Note: Could we AVOID reloading the table while the underlying data
+            //                 which fit into the predicate changes.
         }
     }
 }
