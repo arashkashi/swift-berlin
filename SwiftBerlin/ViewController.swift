@@ -38,6 +38,12 @@ class ViewController: UIViewController {
     
     @IBAction func onCreateTapped() {
         
+        // TODO_1: 
+        // 1. Insert a new object into local store
+        // 2. Perform fetch request
+        // 3. Reload the table
+        // 4. COULD we avoid the perform fetch and reloading the table?
+        
     }
     
     @IBAction func onReadTapped() {
