@@ -27,20 +27,13 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="rEu-VN-Vcb">
-                                <rect key="frame" x="129.5" y="387" width="116" height="30"/>
+                                <rect key="frame" x="164.5" y="387" width="46" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTG-iH-EUS">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Create"/>
                                         <connections>
                                             <action selector="onCreateTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="HNg-oU-lZ3"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BK-1l-Vye">
-                                        <rect key="frame" x="81" y="0.0" width="35" height="30"/>
-                                        <state key="normal" title="Read"/>
-                                        <connections>
-                                            <action selector="onReadTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="hpZ-fH-kmm"/>
                                         </connections>
                                     </button>
                                 </subviews>

@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var bottomTableView: UITableView!
     
     private var searchDelegate: SearchDelegate = SearchDelegate()
+    
+    // TODO_5: sync the second table view with the first one.
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,11 +45,7 @@ class ViewController: UIViewController {
         // 1. Insert a new object into local store
         // 2. Perform fetch request
         // 3. Reload the table
-        // 4. COULD we avoid the perform fetch and reloading the table?
-        
-    }
-    
-    @IBAction func onReadTapped() {
+        // 4. make sure the data source is implemented, for rows and sections.
         
     }
 }
@@ -104,8 +102,6 @@ extension ViewController: UITableViewDelegate {
             //          3. Save to data base using the attached managed object context
             //          4. perform the fetch on fetch results controller
             //          5. reload the table
-            //          Note: Could we AVOID reloading the table while the underlying data
-            //                 which fit into the predicate changes.
         }
     }
 }
